@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TitleBar">
+        <!-- 标题-->
+        <attr name="title" format="string" />
+        <attr name="titleColor" format="color" />
+        <attr name="backgroundColor" format="color" />
+        <!-- 左部栏-->
+        <attr name="leftIcon" format="reference" />
+        <attr name="leftText" format="string" />
+        <attr name="leftTextColor" format="color" />
+        <attr name="leftAsFinish" format="boolean" />
+        <attr name="leftVisible" format="enum">
+            <enum name="visible" value="1" />
+            <enum name="gone" value="0" />
+        </attr>
+        <!-- 右部栏-->
+        <attr name="rightIcon" format="reference" />
+        <attr name="rightText" format="string" />
+        <attr name="rightTextColor" format="color" />
+        <attr name="rightVisible" format="enum">
+            <enum name="visible" value="1" />
+            <enum name="gone" value="0" />
+        </attr>
+        <!-- 底部线-->
+        <attr name="bottomDivider" format="reference" />
+        <attr name="bottomDividerHeight" format="dimension" />
+        <!-- 适配进入到状态栏的情况-->
+        <attr name="fitStatusBar" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="EditView">
+        <attr name="hintText" format="string" />
+        <attr name="text" format="string" />
+        <attr name="maxLength" format="integer" />
+        <attr name="editable" format="boolean" />
+        <attr name="leftImg" format="reference" />
+        <attr name="rightImg" format="reference" />
+        <attr name="inputType" format="enum">
+            <enum name="password" value="129" />
+            <enum name="text" value="1" />
+            <enum name="number" value="2" />
+        </attr>
+        <attr name="rightAction" format="enum">
+            <enum name="password" value="0" />
+            <enum name="clearAll" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="RoundButton">
+        <attr name="btnSolidColor" format="color" />
+        <attr name="btnStrokeColor" format="color" />
+        <attr name="btnStrokeWidth" format="dimension" />
+        <attr name="btnStrokeDashWidth" format="dimension" />
+        <attr name="btnStrokeDashGap" format="dimension" />
+        <attr name="btnCornerRadius" format="dimension">
+            <enum name="stadium" value="-1" />
+        </attr>
+        <attr name="btnPressedRatio" format="float" />
+    </declare-styleable>
+
+</resources>
